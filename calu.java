@@ -24,6 +24,21 @@ public class Calculator implements ActionLister{
 		frame.setSize(420, 550);
 		frame.setLayout(null);
 
+        textfield = new JTextField();
+		textfield.setBounds(50, 25, 300, 50);
+		textfield.setFont(myFont);
+		textfield.setEditable(false);
+		
+		addButton = new JButton("+");
+		subButton = new JButton("-");
+		mulButton = new JButton("*");
+		divButton = new JButton("/");
+		decButton = new JButton(".");
+		equButton = new JButton("=");
+		delButton = new JButton("Del");
+		clrButton = new JButton("Clr");
+		negButton = new JButton("(-)");
+
     }
 
     public static void main(String[] args) {
