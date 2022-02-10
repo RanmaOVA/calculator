@@ -39,6 +39,30 @@ public class Calculator implements ActionLister{
 		clrButton = new JButton("Clr");
 		negButton = new JButton("(-)");
 
+		functionButtons[0] = addButton;
+		functionButtons[1] = subButton;
+		functionButtons[2] = mulButton;
+		functionButtons[3] = divButton;
+		functionButtons[4] = decButton;
+		functionButtons[5] = equButton;
+		functionButtons[6] = delButton;
+		functionButtons[7] = clrButton;
+		functionButtons[8] = negButton;
+		
+		for(int i =0;i<9;i++) {
+			functionButtons[i].addActionListener(this);
+			functionButtons[i].setFont(myFont);
+			functionButtons[i].setFocusable(false);
+		}
+		
+		for(int i =0;i<10;i++) {
+			numberButtons[i] = new JButton(String.valueOf(i));
+			numberButtons[i].addActionListener(this);
+			numberButtons[i].setFont(myFont);
+			numberButtons[i].setFocusable(false);
+		}
+		
+
     }
 
     public static void main(String[] args) {
